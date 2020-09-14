@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %} MoCkInG TeXeT {% endblock %}
+{% block body %}
+    {% if text %}
+    <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <form>
+                    <textarea rows="10" id="textarea" name="text" class="primary">{{ got }}</textarea>
+                    <br>
+                    <br>
+                    <input id="submit-gen" type="submit" value="generate">
+                  </form>
+                <br>
+                <br>
+                <center>
+                  <h5 style="color: #00ff6a;">Text Generated</h5>
+                <div style="font-size: 17px; color: #00ff6a;" id="textarea" class="okay">
+                  {{ text }}
+                </div>
+                </center>
+              
+          </div>
+          </div>
+        </div>
+    <br>
+    <br>
+    {% else %}
+    <div class="container">
+        <div class="row">
+          <div class="col-sm">
+                <form>
+                    <textarea rows="10" id="textarea" name="text" class="primary"></textarea>
+                    <br>
+                    <input type="submit" value="generate">
+                </form>
+            </div>
+          </div>
+        </div>
+    {% endif %}
+{% endblock  %}

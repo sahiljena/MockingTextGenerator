@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title%} Text-Tools{% endblock %}
+{% block body %}
+
+  <button style="float: right;"  id="fullscrenn" onclick="toggleFullScreen()">
+    <img width="20px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Fullscreen_icon_logo_white.svg/1200px-Fullscreen_icon_logo_white.svg.png">
+  </button>
+  <br>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <a href="swag-text/">
+            <div class="flex-container-box primary">
+                MoCkInG TeXeT
+            </div>
+        </a>
+      </div>
+      <div class="col-sm">
+        <div class="flex-container-box danger">
+            Text + Emoji = ❤️
+      Comming soon!
+        </div>
+      </div>
+      <!---<div class="col-sm">
+        <h3 class="text-okay">Total Recovred</h3>
+        <div class="flex-container-box okay">
+      {{ total_recv }}
+        </div>---->
+      </div>
+    </div>
+  </div>
+  
+  
+  
+    
+    
+  
+{% endblock %}
